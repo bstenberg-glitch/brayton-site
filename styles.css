@@ -1,91 +1,108 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f8f8f8;
-  color: #222;
+  background: #f4f4f4;
+  color: #1f1f1f;
 }
 
 nav {
   background: white;
-  padding: 20px 40px;
+  padding: 25px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 nav a {
-  margin-left: 25px;
+  margin-left: 30px;
   text-decoration: none;
-  color: #222;
+  color: #1f1f1f;
   font-weight: 500;
+  letter-spacing: .5px;
 }
 
 nav a:hover {
-  color: #bfa67a;
+  color: #b99a6b;
 }
 
 .hero {
-  height: 90vh;
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+  height: 92vh;
+  background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
   url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding-left: 80px;
+  padding: 0 100px;
   color: white;
 }
 
 .hero h1 {
-  font-size: 60px;
-  max-width: 700px;
+  font-size: 64px;
+  max-width: 750px;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.btn {
+  background: #b99a6b;
+  color: white;
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 500;
 }
 
 .section {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 40px;
+  max-width: 1300px;
+  margin: 120px auto;
+  padding: 0 60px;
+}
+
+.section h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 50px;
 }
 
 .card {
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,.08);
 }
 
 .card img {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
 }
 
 .card div {
-  padding: 20px;
+  padding: 30px;
 }
 
-.btn {
-  background: #bfa67a;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
+.card h3 {
+  margin-top: 0;
 }
 
 footer {
   background: #111;
   color: white;
-  padding: 60px;
+  padding: 80px;
   text-align: center;
-  margin-top: 100px;
 }
